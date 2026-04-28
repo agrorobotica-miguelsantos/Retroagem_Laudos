@@ -38,7 +38,7 @@ resumo_status = df_ano.groupby(['LAUDO', 'STATUS']).size()
 
 col1, col2 = st.columns(2, border=True)
 
-with col1:
+with col2:
     st.header("Fertilidade")
 
     total_fert = contagem_os_LAUDO.get('FERTILIDADE', 0)
@@ -55,7 +55,7 @@ with col1:
     m4.metric("Retroagir", retroagir_fert)
     m5.metric("Desempenho", f"{perc_fert:.0f}%")
 
-with col2:
+with col1:
     st.header("Carbono")
 
     total_carbono = contagem_os_LAUDO.get("CARBONO", 0)
