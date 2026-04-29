@@ -1,6 +1,6 @@
 @echo off
 :: Garantir que caracteres especiais e acentos apareçam
-chcp 65001 > null
+chcp 65001 > nul
 
 :: ================================================================================
 :: SCRIPT DE ATUALIZAÇÃO: COMMIT AUTOMÁTICO PARA GITHUB AGROROBÓTIICA -> STREAMLIT
@@ -16,7 +16,7 @@ echo [2/2] Enviando para o Streamlit
 git push origin main
 
 echo.
-echo ===================================================================
+echo =============================================================================
 echo SUCESSO! O dashboard será atualizado em aproximadamente 1 minuto
-echo ===================================================================
+echo =============================================================================
 exit
